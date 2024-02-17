@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+<title>Treva</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="assets/css/index.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>  
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-fixed w-100">
+            <div class="container justify-content-center justify-content-md-between">
+              <a class="navbar-brand" href="#"><img src="assets/images/Logo.svg" /></a>
+              </div>
+            </div>  
+          </nav>
+    </header>
+    <main>
+        <section class="banner-bg pb-4 position-relative">
+            <div class="container  position-relative">
+                <div class="row mx-0 py-5">
+                    <div class="col-md-7 col-12 mb-md-0 pe-0 pe-md-3 ps-0 align-self-center text-center text-md-start">
+                        <h1 class="fs-1 fw-bolder text-white text-center text-md-start mb-4">
+                            Lorem ipsum dolor <br/> sit amet consectetur 
+
+                        </h1>
+                        <p class="fs-18 white-color-70 mb-4 w-md-50 text-center text-md-start">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg">Sign Up Now</button>
+                    </div>  
+                    <div class="col-md-5 col-12 pe-0 ps-0 ps-md-3 d-none d-md-block">
+                        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active text-center" data-bs-interval="10000">
+                                <img src="./assets/images/carousel-image-1.svg" class="img-fluid" />
+                              </div>
+                              <div class="carousel-item text-center" data-bs-interval="2000">
+                                <img src="./assets/images/carousel-image-1.svg" class="img-fluid" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="./assets/images/carousel-image-1.svg" class="img-fluid" alt="...">
+                              </div>
+                            </div>
+                            
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact_sec pb-4 pt-150">
+            <div class="container pt-3">
+                    <div class="card contact-card mx-auto border-0">
+                        <div class="card-body p-md-5 p-3">
+                            <h1 class="text-black fw-bolder fs-1 mb-3 text-center">
+                                Contact US
+                            </h1>
+                            <p class="fs-18 mb-4 text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            </p>
+                            <form>  
+                                <div class="row mx-0">
+                                <div class="col-12 px-0 mb-4">      
+                                        <label for="Name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="Name" />
+                                </div>
+                                <div class="col-md-6 col-12 ps-0 pe-md-2 pe-0 mb-4">
+                                    <label for="Email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="Name" />
+                                </div>
+                                <div class="col-md-6 col-12 pe-0 ps-md-2 ps-0 mb-4">
+                                    <label for="phonenumber" class="form-label">Phone Number</label>
+                                    <input type="text" class="form-control" id="Name" />
+                                </div>
+                                <div class="col-12 p-0 mb-4">
+                                    <label for="topic" class="form-label">Choose a topic</label>
+                                    <select class="form-select" aria-label=".form-select-lg example">
+                                        <option>Select One</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                                <div class="col-12 p-0 mb-4">
+                                    <label for="Msg" class="form-label">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Type your message..."></textarea>
+                                </div>
+                                <div class="text-center col-12 p-0">
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        $(function(){debugger
+            scrolldownfunc();
+        })
+        function scrolldownfunc(){
+            if($(document).scrollTop() > 60){
+                    $(".navbar").removeClass("bg-transparent").addClass("nav-bg");
+                }
+                else{
+                    $(".navbar").removeClass("nav-bg").addClass("bg-transparent");
+                }
+        }
+       $(window).scroll(function(){
+                scrolldownfunc();
+            })
+    </script>
+</body>
+
+</html>
